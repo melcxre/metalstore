@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A31AE9C1-4D03-43C3-8A37-CC82621551CC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>kursovaya</RootNamespace>
+    <AssemblyName>kursovaya</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>windowIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add_in_availability.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_in_availability.Designer.cs">
+      <DependentUpon>add_in_availability.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_in_catalog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_in_catalog.Designer.cs">
+      <DependentUpon>add_in_catalog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_in_category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_in_category.Designer.cs">
+      <DependentUpon>add_in_category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_in_clients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_in_clients.Designer.cs">
+      <DependentUpon>add_in_clients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_in_country.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_in_country.Designer.cs">
+      <DependentUpon>add_in_country.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_in_orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_in_orders.Designer.cs">
+      <DependentUpon>add_in_orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="change_in_availability.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="change_in_availability.Designer.cs">
+      <DependentUpon>change_in_availability.cs</DependentUpon>
+    </Compile>
+    <Compile Include="change_in_catalog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="change_in_catalog.Designer.cs">
+      <DependentUpon>change_in_catalog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="change_in_category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="change_in_category.Designer.cs">
+      <DependentUpon>change_in_category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="change_in_clients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="change_in_clients.Designer.cs">
+      <DependentUpon>change_in_clients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="change_in_country.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="change_in_country.Designer.cs">
+      <DependentUpon>change_in_country.cs</DependentUpon>
+    </Compile>
+    <Compile Include="change_in_orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="change_in_orders.Designer.cs">
+      <DependentUpon>change_in_orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="storedbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>storedbDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <EmbeddedResource Include="add_in_availability.resx">
+      <DependentUpon>add_in_availability.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_in_catalog.resx">
+      <DependentUpon>add_in_catalog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_in_category.resx">
+      <DependentUpon>add_in_category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_in_clients.resx">
+      <DependentUpon>add_in_clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_in_country.resx">
+      <DependentUpon>add_in_country.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_in_orders.resx">
+      <DependentUpon>add_in_orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="change_in_availability.resx">
+      <DependentUpon>change_in_availability.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="change_in_catalog.resx">
+      <DependentUpon>change_in_catalog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="change_in_category.resx">
+      <DependentUpon>change_in_category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="change_in_clients.resx">
+      <DependentUpon>change_in_clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="change_in_country.resx">
+      <DependentUpon>change_in_country.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="change_in_orders.resx">
+      <DependentUpon>change_in_orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="storedbDataSet.xsc">
+      <DependentUpon>storedbDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="storedbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>storedbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="storedbDataSet.xss">
+      <DependentUpon>storedbDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="storedb.accdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="windowIcon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
